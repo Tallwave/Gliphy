@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ A wrapper around all of the attributes needed when the content size updates. Not a Struct because those can't be stored in `NSMapTable`.
+*/
 class DynamicTypeElement {
     let keyPath: String
     let textStyle: String

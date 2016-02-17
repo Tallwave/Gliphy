@@ -9,6 +9,7 @@
 
 import Foundation
 
+/// Allows subscripting on an `NSMapTable`.
 extension NSMapTable {
     subscript(key: AnyObject) -> AnyObject? {
         get {
