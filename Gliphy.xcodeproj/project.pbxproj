@@ -38,7 +38,6 @@
 		A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeManager.swift; sourceTree = "<group>"; };
 		A784B2371C741BED004EB35B /* DynamicTypeElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeElement.swift; sourceTree = "<group>"; };
 		A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMapTableExtensions.swift; sourceTree = "<group>"; };
-		A784B23D1C74261B004EB35B /* GliphyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GliphyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +62,6 @@
 		A784B20F1C74171B004EB35B = {
 			isa = PBXGroup;
 			children = (
-				A784B23D1C74261B004EB35B /* GliphyPlayground.playground */,
 				A784B21B1C74171B004EB35B /* Gliphy */,
 				A784B2271C74171B004EB35B /* GliphyTests */,
 				A784B21A1C74171B004EB35B /* Products */,

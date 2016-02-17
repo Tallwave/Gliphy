@@ -11,15 +11,17 @@ import UIKit
 public class DynamicTypeManager {
 
     struct Values {
-        static let fontKeyPathUILabel = "font"
-        static let fontKeyPathUIButton = "titleLabel.font"
+        static let fontKeyPathUILabel =   "font"
+        static let fontKeyPathUIButton =  "titleLabel.font"
         static let fontKeyPathTextField = "font"
-        static let fontKeyPathTextView = "font"
+        static let fontKeyPathTextView =  "font"
     }
+
+    static let sharedInstance = DynamicTypeManager()
 
     private var elementToTypeTable: NSMapTable = NSMapTable.weakToStrongObjectsMapTable()
 
-    init() {
+    private init() {
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: "contentSizeCategoryDidChange:",
             name: UIContentSizeCategoryDidChangeNotification,
