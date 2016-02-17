@@ -12,6 +12,10 @@
 		A784B2291C74171B004EB35B /* GliphyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2281C74171B004EB35B /* GliphyTests.swift */; };
 		A784B2351C7417B3004EB35B /* DynamicTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */; };
 		A784B2361C7417B3004EB35B /* DynamicTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */; };
+		A784B2381C741BED004EB35B /* DynamicTypeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2371C741BED004EB35B /* DynamicTypeElement.swift */; };
+		A784B2391C741BED004EB35B /* DynamicTypeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2371C741BED004EB35B /* DynamicTypeElement.swift */; };
+		A784B23B1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */; };
+		A784B23C1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,9 @@
 		A784B2281C74171B004EB35B /* GliphyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GliphyTests.swift; sourceTree = "<group>"; };
 		A784B22A1C74171B004EB35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeManager.swift; sourceTree = "<group>"; };
+		A784B2371C741BED004EB35B /* DynamicTypeElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeElement.swift; sourceTree = "<group>"; };
+		A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMapTableExtensions.swift; sourceTree = "<group>"; };
+		A784B23D1C74261B004EB35B /* GliphyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GliphyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 		A784B20F1C74171B004EB35B = {
 			isa = PBXGroup;
 			children = (
+				A784B23D1C74261B004EB35B /* GliphyPlayground.playground */,
 				A784B21B1C74171B004EB35B /* Gliphy */,
 				A784B2271C74171B004EB35B /* GliphyTests */,
 				A784B21A1C74171B004EB35B /* Products */,
@@ -94,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */,
+				A784B2371C741BED004EB35B /* DynamicTypeElement.swift */,
+				A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -206,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A784B23B1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */,
+				A784B2381C741BED004EB35B /* DynamicTypeElement.swift in Sources */,
 				A784B2351C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A784B23C1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */,
 				A784B2291C74171B004EB35B /* GliphyTests.swift in Sources */,
 				A784B2361C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,
+				A784B2391C741BED004EB35B /* DynamicTypeElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
