@@ -16,6 +16,11 @@
 		A784B2391C741BED004EB35B /* DynamicTypeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2371C741BED004EB35B /* DynamicTypeElement.swift */; };
 		A784B23B1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */; };
 		A784B23C1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */; };
+		A784B2451C743306004EB35B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2441C743306004EB35B /* AppDelegate.swift */; };
+		A784B2471C743306004EB35B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2461C743306004EB35B /* ViewController.swift */; };
+		A784B24A1C743306004EB35B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A784B2481C743306004EB35B /* Main.storyboard */; };
+		A784B24C1C743306004EB35B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A784B24B1C743306004EB35B /* Assets.xcassets */; };
+		A784B24F1C743306004EB35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A784B24D1C743306004EB35B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,13 @@
 		A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeManager.swift; sourceTree = "<group>"; };
 		A784B2371C741BED004EB35B /* DynamicTypeElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeElement.swift; sourceTree = "<group>"; };
 		A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMapTableExtensions.swift; sourceTree = "<group>"; };
+		A784B2421C743306004EB35B /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A784B2441C743306004EB35B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A784B2461C743306004EB35B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A784B2491C743306004EB35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A784B24B1C743306004EB35B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A784B24E1C743306004EB35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A784B2501C743306004EB35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A784B23F1C743306004EB35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +83,7 @@
 			children = (
 				A784B21B1C74171B004EB35B /* Gliphy */,
 				A784B2271C74171B004EB35B /* GliphyTests */,
+				A784B2431C743306004EB35B /* ExampleApp */,
 				A784B21A1C74171B004EB35B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +93,7 @@
 			children = (
 				A784B2191C74171B004EB35B /* Gliphy.framework */,
 				A784B2231C74171B004EB35B /* GliphyTests.xctest */,
+				A784B2421C743306004EB35B /* ExampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +125,19 @@
 				A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		A784B2431C743306004EB35B /* ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				A784B2441C743306004EB35B /* AppDelegate.swift */,
+				A784B2461C743306004EB35B /* ViewController.swift */,
+				A784B2481C743306004EB35B /* Main.storyboard */,
+				A784B24B1C743306004EB35B /* Assets.xcassets */,
+				A784B24D1C743306004EB35B /* LaunchScreen.storyboard */,
+				A784B2501C743306004EB35B /* Info.plist */,
+			);
+			path = ExampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +190,23 @@
 			productReference = A784B2231C74171B004EB35B /* GliphyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A784B2411C743306004EB35B /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A784B2511C743306004EB35B /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				A784B23E1C743306004EB35B /* Sources */,
+				A784B23F1C743306004EB35B /* Frameworks */,
+				A784B2401C743306004EB35B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleApp;
+			productName = ExampleApp;
+			productReference = A784B2421C743306004EB35B /* ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +223,9 @@
 					A784B2221C74171B004EB35B = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					A784B2411C743306004EB35B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = A784B2131C74171B004EB35B /* Build configuration list for PBXProject "Gliphy" */;
@@ -180,6 +234,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A784B20F1C74171B004EB35B;
 			productRefGroup = A784B21A1C74171B004EB35B /* Products */;
@@ -188,6 +243,7 @@
 			targets = (
 				A784B2181C74171B004EB35B /* Gliphy */,
 				A784B2221C74171B004EB35B /* GliphyTests */,
+				A784B2411C743306004EB35B /* ExampleApp */,
 			);
 		};
 /* End PBXProject section */
@@ -204,6 +260,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A784B2401C743306004EB35B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A784B24F1C743306004EB35B /* LaunchScreen.storyboard in Resources */,
+				A784B24C1C743306004EB35B /* Assets.xcassets in Resources */,
+				A784B24A1C743306004EB35B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +297,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A784B23E1C743306004EB35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A784B2471C743306004EB35B /* ViewController.swift in Sources */,
+				A784B2451C743306004EB35B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +315,25 @@
 			targetProxy = A784B2251C74171B004EB35B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A784B2481C743306004EB35B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A784B2491C743306004EB35B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A784B24D1C743306004EB35B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A784B24E1C743306004EB35B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A784B22B1C74171B004EB35B /* Debug */ = {
@@ -386,6 +480,30 @@
 			};
 			name = Release;
 		};
+		A784B2521C743306004EB35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tallwave.gliphy.example.ExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A784B2531C743306004EB35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tallwave.gliphy.example.ExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +529,14 @@
 			buildConfigurations = (
 				A784B2311C74171B004EB35B /* Debug */,
 				A784B2321C74171B004EB35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A784B2511C743306004EB35B /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A784B2521C743306004EB35B /* Debug */,
+				A784B2531C743306004EB35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
