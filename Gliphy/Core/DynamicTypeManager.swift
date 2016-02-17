@@ -17,7 +17,7 @@ public class DynamicTypeManager {
         static let fontKeyPathTextView =  "font"
     }
 
-    static let sharedInstance = DynamicTypeManager()
+    public static let sharedInstance = DynamicTypeManager()
 
     private var elementToTypeTable: NSMapTable = NSMapTable.weakToStrongObjectsMapTable()
 
@@ -59,7 +59,7 @@ public class DynamicTypeManager {
         return UIFont(name: fontName, size: systemFont.pointSize)!
     }
 
-    public func contentSizeCategoryDidChange(notification: NSNotification) {
+    @objc public func contentSizeCategoryDidChange(notification: NSNotification) {
         let enumerator = elementToTypeTable.keyEnumerator()
         while let view = enumerator.nextObject() as? UIView {
             if let element = elementToTypeTable[view] as? DynamicTypeElement {
