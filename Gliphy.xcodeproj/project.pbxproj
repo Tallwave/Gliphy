@@ -10,6 +10,8 @@
 		A784B21D1C74171B004EB35B /* Gliphy.h in Headers */ = {isa = PBXBuildFile; fileRef = A784B21C1C74171B004EB35B /* Gliphy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A784B2241C74171B004EB35B /* Gliphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A784B2191C74171B004EB35B /* Gliphy.framework */; };
 		A784B2291C74171B004EB35B /* GliphyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2281C74171B004EB35B /* GliphyTests.swift */; };
+		A784B2351C7417B3004EB35B /* DynamicTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */; };
+		A784B2361C7417B3004EB35B /* DynamicTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		A784B2231C74171B004EB35B /* GliphyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GliphyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A784B2281C74171B004EB35B /* GliphyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GliphyTests.swift; sourceTree = "<group>"; };
 		A784B22A1C74171B004EB35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		A784B21B1C74171B004EB35B /* Gliphy */ = {
 			isa = PBXGroup;
 			children = (
+				A784B2331C741789004EB35B /* Core */,
 				A784B21C1C74171B004EB35B /* Gliphy.h */,
 				A784B21E1C74171B004EB35B /* Info.plist */,
 			);
@@ -84,6 +88,14 @@
 				A784B22A1C74171B004EB35B /* Info.plist */,
 			);
 			path = GliphyTests;
+			sourceTree = "<group>";
+		};
+		A784B2331C741789004EB35B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A784B2351C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A784B2291C74171B004EB35B /* GliphyTests.swift in Sources */,
+				A784B2361C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -295,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,6 +322,7 @@
 		A784B22E1C74171B004EB35B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -315,15 +330,17 @@
 				INFOPLIST_FILE = Gliphy/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tallwave.gliphy.Gliphy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tallwave.gliphy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A784B22F1C74171B004EB35B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -331,7 +348,7 @@
 				INFOPLIST_FILE = Gliphy/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tallwave.gliphy.Gliphy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tallwave.gliphy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
