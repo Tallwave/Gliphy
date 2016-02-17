@@ -21,16 +21,20 @@ class GliphyTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFontBuilder() {
+        let font = DynamicTypeManager.sharedInstance.fontForTextStyle(UIFontTextStyleTitle1, fontName: "Georgia")
+        XCTAssertEqual("Georgia", font.familyName)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testFontBuilderWithBadStyle() {
+        let font = DynamicTypeManager.sharedInstance.fontForTextStyle("bad font", fontName: "Georgia")
+        let defaultFontSize: CGFloat = 12.0
+        XCTAssertEqual(defaultFontSize, font.pointSize)
     }
     
+    func testFontBuilderWithBadFont() {
+        let font = DynamicTypeManager.sharedInstance.fontForTextStyle(UIFontTextStyleTitle1, fontName: "bad font")
+        let expectedFont = UIFont.preferredFontForTextStyle(UIFontTextStyleTitle1)
+        XCTAssertEqual(expectedFont, font)
+    }
 }

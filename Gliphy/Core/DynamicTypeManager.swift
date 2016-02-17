@@ -102,11 +102,14 @@ public class DynamicTypeManager {
      - Parameter style: The equivalent system font style to apply to the font.
      - Parameter fontName: The name of the non-system font.
      
-     - Returns: The font with the `fontName` and size defined by the preferred font with `style`.
+     - Returns: The font with the `fontName` and size defined by the preferred font with `style`. If the `fontName` is not a valid font on the device, the system font for the `style` is used.
     */
     func fontForTextStyle(style: String, fontName: String) -> UIFont {
         let systemFont = UIFont.preferredFontForTextStyle(style)
-        return UIFont(name: fontName, size: systemFont.pointSize)!
+        guard let customFont = UIFont(name: fontName, size: systemFont.pointSize) else {
+            return systemFont
+        }
+        return customFont
     }
 
     /**
