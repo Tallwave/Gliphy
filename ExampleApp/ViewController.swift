@@ -19,12 +19,5 @@ class ViewController: UIViewController {
         DynamicTypeManager.sharedInstance.watchLabel(heading, textStyle: UIFontTextStyleHeadline, fontName: "Georgia")
         DynamicTypeManager.sharedInstance.watchButton(tapme, textStyle: UIFontTextStyleBody, fontName: "Georgia")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
