@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Scott Williams" => "scott.williams@tallwave.com" }
   s.social_media_url = 'http://twitter.com/swilliams'
-  s.source       = { :git => "https://github.com/tallwave/Glihpy.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/tallwave/Gliphy.git", :tag => s.version }
   s.platform     = :ios, '9.0'
   s.source_files = 'Gliphy/**/*.swift'
   s.requires_arc = true
