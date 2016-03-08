@@ -6,6 +6,9 @@ You can see it in action by cloning this repository and running the Example app.
 A big thank you to Big Nerd Ranch for [BNRDynamicTypeManager](https://github.com/bignerdranch/BNRDynamicTypeManager) which served as a template for this project.
 
 # Usage
+
+First, you can have Gliphy watch for Dynamic Type changes and automatically adjust your views.
+
 Create and layout your views in code or Interface Builder. Tell `DynamicTypeManager` to watch those views and apply the appropriate styling and font names to them.
 
 ```swift
@@ -22,6 +25,18 @@ class ViewController: UIViewController {
       fontName: "Georgia")
   }
 }
+```
+
+Custom fonts are nice, but what if you want to have a different font *size* too? Gliphy let's you do this. First, register a custom font style in the `DynamicFontRegistry`.
+
+```swift
+DynamicFontRegistry.registry.addTextStyle("SuperBigFont", scaledFrom: UIFontTextStyleTitle1, byFactor: 1.5)
+```
+
+Then, update your watchers to use the new style.
+
+```swift
+DynamicTypeManager.sharedInstance.watchLabel(aLabel, textStyle: "SuperBigFont", fontName: "Helvetica")
 ```
 
 # Installation with Cocoapods
