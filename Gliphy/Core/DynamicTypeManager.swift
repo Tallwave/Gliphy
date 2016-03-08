@@ -97,7 +97,7 @@ public class DynamicTypeManager {
     }
 
     /**
-     Looks up the `UIFont` with the `fontName` and the size defined by the `style`.
+     Looks up the `UIFont` with the `fontName` and the size defined by the `style`. Firsts checks the `DynamicFontRegistry` for a custom size, then the `preferredFontForTextStyle` for fonts.
      
      - Parameter style: The equivalent system font style to apply to the font.
      - Parameter fontName: The name of the non-system font.
@@ -105,6 +105,10 @@ public class DynamicTypeManager {
      - Returns: The font with the `fontName` and size defined by the preferred font with `style`. If the `fontName` is not a valid font on the device, the system font for the `style` is used.
     */
     func fontForTextStyle(style: String, fontName: String) -> UIFont {
+        if let customSize = DynamicFontRegistry.registry.scaledFontSizeForStyle(style) {
+            return UIFont(name: fontName, size: customSize)!
+        }
+        
         let systemFont = UIFont.preferredFontForTextStyle(style)
         guard let customFont = UIFont(name: fontName, size: systemFont.pointSize) else {
             return systemFont

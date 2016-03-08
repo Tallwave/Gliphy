@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A779B0881C8F67B50044996A /* DynamicFontRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779B0871C8F67B50044996A /* DynamicFontRegistry.swift */; };
+		A779B0891C8F67B50044996A /* DynamicFontRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779B0871C8F67B50044996A /* DynamicFontRegistry.swift */; };
+		A779B08A1C8F67B50044996A /* DynamicFontRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779B0871C8F67B50044996A /* DynamicFontRegistry.swift */; };
+		A779B08D1C8F69DA0044996A /* FontRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779B08C1C8F69DA0044996A /* FontRegistryTests.swift */; };
 		A784B21D1C74171B004EB35B /* Gliphy.h in Headers */ = {isa = PBXBuildFile; fileRef = A784B21C1C74171B004EB35B /* Gliphy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A784B2241C74171B004EB35B /* Gliphy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A784B2191C74171B004EB35B /* Gliphy.framework */; };
 		A784B2291C74171B004EB35B /* GliphyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2281C74171B004EB35B /* GliphyTests.swift */; };
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A779B0871C8F67B50044996A /* DynamicFontRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFontRegistry.swift; sourceTree = "<group>"; };
+		A779B08C1C8F69DA0044996A /* FontRegistryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontRegistryTests.swift; sourceTree = "<group>"; };
 		A784B2191C74171B004EB35B /* Gliphy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gliphy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A784B21C1C74171B004EB35B /* Gliphy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gliphy.h; sourceTree = "<group>"; };
 		A784B21E1C74171B004EB35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				A784B2281C74171B004EB35B /* GliphyTests.swift */,
+				A779B08C1C8F69DA0044996A /* FontRegistryTests.swift */,
 				A784B22A1C74171B004EB35B /* Info.plist */,
 			);
 			path = GliphyTests;
@@ -121,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */,
+				A779B0871C8F67B50044996A /* DynamicFontRegistry.swift */,
 				A784B2371C741BED004EB35B /* DynamicTypeElement.swift */,
 				A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */,
 			);
@@ -281,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A784B23B1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */,
+				A779B0881C8F67B50044996A /* DynamicFontRegistry.swift in Sources */,
 				A784B2381C741BED004EB35B /* DynamicTypeElement.swift in Sources */,
 				A784B2351C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,
 			);
@@ -290,8 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A779B0891C8F67B50044996A /* DynamicFontRegistry.swift in Sources */,
 				A784B23C1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */,
 				A784B2291C74171B004EB35B /* GliphyTests.swift in Sources */,
+				A779B08D1C8F69DA0044996A /* FontRegistryTests.swift in Sources */,
 				A784B2361C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,
 				A784B2391C741BED004EB35B /* DynamicTypeElement.swift in Sources */,
 			);
@@ -303,6 +314,7 @@
 			files = (
 				A784B2471C743306004EB35B /* ViewController.swift in Sources */,
 				A784B2451C743306004EB35B /* AppDelegate.swift in Sources */,
+				A779B08A1C8F67B50044996A /* DynamicFontRegistry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +535,7 @@
 				A784B22F1C74171B004EB35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A784B2301C74171B004EB35B /* Build configuration list for PBXNativeTarget "GliphyTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +544,7 @@
 				A784B2321C74171B004EB35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A784B2511C743306004EB35B /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +553,7 @@
 				A784B2531C743306004EB35B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
