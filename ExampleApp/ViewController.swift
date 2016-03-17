@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let style = "ReallyReallyBigFont"
-        Gliphy.DynamicFontRegistry.registry.addTextStyle(style, scaledFrom: UIFontTextStyleTitle1, byFactor: 1.5)
+        Gliphy.DynamicFontRegistry.registry.addTextStyle(style, scaledFrom: UIFontTextStyleHeadline, byFactor: 1.5)
         
         DynamicTypeManager.sharedInstance.watchLabel(heading, textStyle: UIFontTextStyleHeadline, fontName: "Georgia")
         DynamicTypeManager.sharedInstance.watchButton(tapme, textStyle: UIFontTextStyleBody, fontName: "Georgia")
