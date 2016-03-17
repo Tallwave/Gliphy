@@ -12,7 +12,7 @@ import XCTest
 class FontRegistryTests: XCTestCase {
     
     func testRetrieveSize() {
-        DynamicFontRegistry.registry.addTextStyle("ReallyBigFont", scaledFrom: UIFontTextStyleTitle1, byFactor: 1.2)
+        DynamicFontRegistry.registry.addTextStyle("ReallyBigFont", scaledFrom: UIFontTextStyleHeadline, byFactor: 1.2)
         let result = DynamicFontRegistry.registry.scaledFontSizeForStyle("ReallyBigFont")
         XCTAssertNotNil(result)
         XCTAssertNotEqual(result, 12.0)
