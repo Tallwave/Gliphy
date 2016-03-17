@@ -42,7 +42,7 @@ DynamicTypeManager.sharedInstance.watchLabel(aLabel, textStyle: "SuperBigFont", 
 # Installation with Cocoapods
 Add this line to your podfile:
 
-    pod "Gliphy", "~> 0.1.0"
+    pod "Gliphy", "~> 0.2.0"
 
 # Installation without Cocoapods
 Take all of the files in the `Gliphy/Core` folder and copy them into your project. That's it.
