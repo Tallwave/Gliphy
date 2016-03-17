@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Gliphy"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "A Swift Library to help manage Dynamic Type"
 
   s.description  = <<-DESC
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "Scott Williams" => "scott.williams@tallwave.com" }
   s.social_media_url = 'http://twitter.com/swilliams'
   s.source       = { :git => "https://github.com/tallwave/Gliphy.git", :tag => s.version }
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '8.0'
   s.source_files = 'Gliphy/**/*.swift'
   s.requires_arc = true
 end
