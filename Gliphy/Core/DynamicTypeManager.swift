@@ -7,6 +7,10 @@
 //
 
 import UIKit
+
+/// DynamicTypeManager is a lot to type... 'Gliphy' is shorter. 
+typealias Gliphy = DynamicTypeManager
+
 /**
  `DynamicTypeManager` is a singleton that watches for the `UIContentSizeCategoryDidChangeNotification` notification and then updates all views to the new size accordingly. By default, Dynamic Type only works with the system font. Gliphy allows any font installed to be substituted.
 */
