@@ -25,6 +25,8 @@
 		A784B24A1C743306004EB35B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A784B2481C743306004EB35B /* Main.storyboard */; };
 		A784B24C1C743306004EB35B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A784B24B1C743306004EB35B /* Assets.xcassets */; };
 		A784B24F1C743306004EB35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A784B24D1C743306004EB35B /* LaunchScreen.storyboard */; };
+		A79DBE9B1CB99AF8000BAA63 /* StyleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */; };
+		A79DBE9C1CB99AF8000BAA63 /* StyleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		A784B24B1C743306004EB35B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A784B24E1C743306004EB35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A784B2501C743306004EB35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */,
+				A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */,
 				A779B0871C8F67B50044996A /* DynamicFontRegistry.swift */,
 				A784B2371C741BED004EB35B /* DynamicTypeElement.swift */,
 				A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */,
@@ -288,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79DBE9B1CB99AF8000BAA63 /* StyleConfig.swift in Sources */,
 				A784B23B1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */,
 				A779B0881C8F67B50044996A /* DynamicFontRegistry.swift in Sources */,
 				A784B2381C741BED004EB35B /* DynamicTypeElement.swift in Sources */,
@@ -303,6 +308,7 @@
 				A784B23C1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */,
 				A784B2291C74171B004EB35B /* GliphyTests.swift in Sources */,
 				A779B08D1C8F69DA0044996A /* FontRegistryTests.swift in Sources */,
+				A79DBE9C1CB99AF8000BAA63 /* StyleConfig.swift in Sources */,
 				A784B2361C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,
 				A784B2391C741BED004EB35B /* DynamicTypeElement.swift in Sources */,
 			);
