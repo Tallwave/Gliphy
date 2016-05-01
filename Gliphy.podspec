@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Gliphy"
-  s.version      = "0.2.1"
+  s.version      = "0.3.0"
   s.summary      = "A Swift Library to help manage Dynamic Type"
 
   s.description  = <<-DESC
