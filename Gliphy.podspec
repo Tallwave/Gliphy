@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.social_media_url = 'http://twitter.com/swilliams'
   s.source       = { :git => "https://github.com/tallwave/Gliphy.git", :tag => s.version }
   s.platform     = :ios, '8.0'
-  s.source_files = 'Gliphy/**/*.swift'
+  s.source_files = 'Sources/**/*.swift'
   s.requires_arc = true
 end
