@@ -6,7 +6,7 @@
 //  Copyright © 2016 Tallwave. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension UILabel {
     var textStyle: String? {
