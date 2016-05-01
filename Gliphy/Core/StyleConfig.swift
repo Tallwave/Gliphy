@@ -36,24 +36,24 @@ struct StyleWatcher {
     func watchButton(btn: UIButton, withConfig config: StyleConfig) {
         guard let textStyle = btn.textStyle,
             customFontName = config.button[textStyle] else { return }
-        Gliphy.sharedInstance.watchButton(btn, textStyle: UIFontTextStyleBody, fontName: customFontName!)
+        Gliphy.sharedInstance.watchButton(btn, textStyle: textStyle, fontName: customFontName!)
     }
 
     func watchLabel(label: UILabel, withConfig config: StyleConfig) {
         guard let textStyle = label.textStyle,
             customFontName = config.label[textStyle] else { return }
-        Gliphy.sharedInstance.watchLabel(label, textStyle: UIFontTextStyleBody, fontName: customFontName!)
+        Gliphy.sharedInstance.watchLabel(label, textStyle: textStyle, fontName: customFontName!)
     }
 
     func watchTextField(textField: UITextField, withConfig config: StyleConfig) {
         guard let textStyle = textField.textStyle,
             customFontName = config.textField[textStyle] else { return }
-        Gliphy.sharedInstance.watchTextField(textField, textStyle: UIFontTextStyleBody, fontName: customFontName!)
+        Gliphy.sharedInstance.watchTextField(textField, textStyle: textStyle, fontName: customFontName!)
     }
 
     func watchTextView(textView: UITextView, withConfig config: StyleConfig) {
         guard let textStyle = textView.textStyle,
             customFontName = config.textView[textStyle] else { return }
-        Gliphy.sharedInstance.watchTextView(textView, textStyle: UIFontTextStyleBody, fontName: customFontName!)
+        Gliphy.sharedInstance.watchTextView(textView, textStyle: textStyle, fontName: customFontName!)
     }
 }
