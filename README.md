@@ -27,7 +27,7 @@ titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
 
 Or set the appropriate text style in Interface Builder:
 
-IMAGES HERE
+![Xcode Font Panels](https://raw.githubusercontent.com/Tallwave/Gliphy/gh-pages/images/ib.png)
 
 Now your label will have the "Headline" style associated with it, and be automatically scaled to the appropriate font size that iOS has stored for "Headline" text. But if the user changes their font settings, the changes will not be reflected until your app quits and is relaunched. To avoid that kind of annoyance, you need to watch for  `UIContentSizeCategoryDidChangeNotification`:
 
