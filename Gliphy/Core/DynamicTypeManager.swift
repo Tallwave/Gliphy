@@ -33,7 +33,7 @@ public class DynamicTypeManager {
 
     private init() {
         NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "contentSizeCategoryDidChange:",
+            selector: #selector(DynamicTypeManager.contentSizeCategoryDidChange(_:)),
             name: UIContentSizeCategoryDidChangeNotification,
             object: nil)
     }
