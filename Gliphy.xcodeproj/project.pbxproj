@@ -31,6 +31,13 @@
 		A7EAD56A1CD5AFFF008781F6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD5681CD5AFFE008781F6 /* Util.swift */; };
 		A7EAD56C1CD5B0D0008781F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD56B1CD5B0D0008781F6 /* Extensions.swift */; };
 		A7EAD56D1CD5B0D0008781F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD56B1CD5B0D0008781F6 /* Extensions.swift */; };
+		A7EAD56F1CD5BCD3008781F6 /* WatcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD56E1CD5BCD3008781F6 /* WatcherViewController.swift */; };
+		A7EAD5701CD5BD6E008781F6 /* DynamicTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */; };
+		A7EAD5711CD5BD6E008781F6 /* StyleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */; };
+		A7EAD5721CD5BD6E008781F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD56B1CD5B0D0008781F6 /* Extensions.swift */; };
+		A7EAD5731CD5BD6E008781F6 /* DynamicTypeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B2371C741BED004EB35B /* DynamicTypeElement.swift */; };
+		A7EAD5741CD5BD6E008781F6 /* NSMapTableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */; };
+		A7EAD5751CD5BD6E008781F6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD5681CD5AFFE008781F6 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,7 @@
 		A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleConfig.swift; sourceTree = "<group>"; };
 		A7EAD5681CD5AFFE008781F6 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		A7EAD56B1CD5B0D0008781F6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A7EAD56E1CD5BCD3008781F6 /* WatcherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatcherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 			children = (
 				A784B2441C743306004EB35B /* AppDelegate.swift */,
 				A784B2461C743306004EB35B /* ViewController.swift */,
+				A7EAD56E1CD5BCD3008781F6 /* WatcherViewController.swift */,
 				A784B2481C743306004EB35B /* Main.storyboard */,
 				A784B24B1C743306004EB35B /* Assets.xcassets */,
 				A784B24D1C743306004EB35B /* LaunchScreen.storyboard */,
@@ -330,9 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EAD56F1CD5BCD3008781F6 /* WatcherViewController.swift in Sources */,
 				A784B2471C743306004EB35B /* ViewController.swift in Sources */,
+				A7EAD5701CD5BD6E008781F6 /* DynamicTypeManager.swift in Sources */,
 				A784B2451C743306004EB35B /* AppDelegate.swift in Sources */,
+				A7EAD5731CD5BD6E008781F6 /* DynamicTypeElement.swift in Sources */,
 				A779B08A1C8F67B50044996A /* DynamicFontRegistry.swift in Sources */,
+				A7EAD5741CD5BD6E008781F6 /* NSMapTableExtensions.swift in Sources */,
+				A7EAD5751CD5BD6E008781F6 /* Util.swift in Sources */,
+				A7EAD5711CD5BD6E008781F6 /* StyleConfig.swift in Sources */,
+				A7EAD5721CD5BD6E008781F6 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

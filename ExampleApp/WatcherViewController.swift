@@ -8,28 +8,30 @@
 
 import UIKit
 
-class AdvancedViewController: UIViewController {
+struct ConfigSetup {
+    static func setup() {
+        var config = StyleConfig()
+        config.label[UIFontTextStyleHeadline] = "Verdana"
+        config.label[UIFontTextStyleCaption1] = "MarkerFelt-Thin"
+        config.button[UIFontTextStyleHeadline] = "Verdana"
+        config.textField[UIFontTextStyleBody] = "Verdana"
+        config.textField[UIFontTextStyleCaption1] = "Helvetica"
+        StyleWatcher.defaultConfig = config
+    }
+}
+
+class WatcherViewController: UIViewController, UITextFieldDelegate {
+
+    let watcher = StyleWatcher()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        watcher.watchViews(inView: view)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
