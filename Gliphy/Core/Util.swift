@@ -9,5 +9,6 @@
 import Foundation
 
 struct Util {
+    /// The name of the attribute that Dynamic Type uses.
     static let dynamicTextAttribute = "NSCTFontUIUsageAttribute"
 }

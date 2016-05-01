@@ -8,6 +8,8 @@
 
 import UIKit
 
+// These extensions are shortcuts to get the textStyle that was set for Dynamic Type
+
 extension UILabel {
     var textStyle: String? {
         return font.fontDescriptor().fontAttributes()[Util.dynamicTextAttribute] as? String
