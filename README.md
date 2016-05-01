@@ -2,7 +2,21 @@
 
 Dynamic Type. This is a great technology that makes your app more accessible to people with less than stellar eyesight. And it also makes auto layout a little easier when it comes time to support different languages. It isn't terribly difficult to implement, but can be tedious to cover everything.
 
-Gliphy aims to make it a breeze, and give you a couple of extra benefits along the way. Here's how it works from the most manual up to the most magic way.
+Gliphy aims to make it a breeze, and give you a couple of extra benefits along the way. 
+
+## Features
+* Great Dynamic Type management
+* Custom Fonts
+* Cocoapods support
+* Swift Package Manager support
+
+## Requirements
+* iOS 8.0+
+* Xcode 7
+* Swift 2
+
+# Usage
+Here's how it works from the most manual way up to the most magic:
 
 ## Without Gliphy
 First, let's briefly recap how to enable Dynamic Type in your app. In code you can do this with:
@@ -129,7 +143,7 @@ Add this line to your podfile:
     pod "Gliphy", "~> 0.3.0"
 
 # Installation without Cocoapods
-Take all of the files in the `Gliphy/Core` folder and copy them into your project. That's it.
+Take all of the files in the `Gliphy/Core` folder and copy them into your project.
 
 # License
 MIT license. See `LICENSE` for more details.
