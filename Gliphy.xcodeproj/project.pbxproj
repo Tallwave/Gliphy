@@ -27,6 +27,10 @@
 		A784B24F1C743306004EB35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A784B24D1C743306004EB35B /* LaunchScreen.storyboard */; };
 		A79DBE9B1CB99AF8000BAA63 /* StyleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */; };
 		A79DBE9C1CB99AF8000BAA63 /* StyleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */; };
+		A7EAD5691CD5AFFE008781F6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD5681CD5AFFE008781F6 /* Util.swift */; };
+		A7EAD56A1CD5AFFF008781F6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD5681CD5AFFE008781F6 /* Util.swift */; };
+		A7EAD56C1CD5B0D0008781F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD56B1CD5B0D0008781F6 /* Extensions.swift */; };
+		A7EAD56D1CD5B0D0008781F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EAD56B1CD5B0D0008781F6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,8 @@
 		A784B24E1C743306004EB35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A784B2501C743306004EB35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleConfig.swift; sourceTree = "<group>"; };
+		A7EAD5681CD5AFFE008781F6 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		A7EAD56B1CD5B0D0008781F6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +138,11 @@
 			children = (
 				A784B2341C7417B3004EB35B /* DynamicTypeManager.swift */,
 				A79DBE9A1CB99AF8000BAA63 /* StyleConfig.swift */,
+				A7EAD56B1CD5B0D0008781F6 /* Extensions.swift */,
 				A779B0871C8F67B50044996A /* DynamicFontRegistry.swift */,
 				A784B2371C741BED004EB35B /* DynamicTypeElement.swift */,
 				A784B23A1C741E84004EB35B /* NSMapTableExtensions.swift */,
+				A7EAD5681CD5AFFE008781F6 /* Util.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -293,10 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79DBE9B1CB99AF8000BAA63 /* StyleConfig.swift in Sources */,
+				A7EAD5691CD5AFFE008781F6 /* Util.swift in Sources */,
 				A784B23B1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */,
 				A779B0881C8F67B50044996A /* DynamicFontRegistry.swift in Sources */,
 				A784B2381C741BED004EB35B /* DynamicTypeElement.swift in Sources */,
 				A784B2351C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,
+				A7EAD56C1CD5B0D0008781F6 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A779B0891C8F67B50044996A /* DynamicFontRegistry.swift in Sources */,
+				A7EAD56D1CD5B0D0008781F6 /* Extensions.swift in Sources */,
 				A784B23C1C741E84004EB35B /* NSMapTableExtensions.swift in Sources */,
 				A784B2291C74171B004EB35B /* GliphyTests.swift in Sources */,
+				A7EAD56A1CD5AFFF008781F6 /* Util.swift in Sources */,
 				A779B08D1C8F69DA0044996A /* FontRegistryTests.swift in Sources */,
 				A79DBE9C1CB99AF8000BAA63 /* StyleConfig.swift in Sources */,
 				A784B2361C7417B3004EB35B /* DynamicTypeManager.swift in Sources */,

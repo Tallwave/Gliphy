@@ -13,40 +13,47 @@ typealias StyleConfigDictionary = [String: String?] // textStyle: customFontName
 struct StyleConfig {
     var button = StyleConfigDictionary()
     var label = StyleConfigDictionary()
-
-    func watchViews() {
-        let btns = [UIButton()]
-        for btn in btns {
-            guard let textStyle = btn.titleLabel?.font.fontDescriptor().fontAttributes()["sdf"]  as? String else { break }
-            if let customFontName = button[textStyle] {
-                Gliphy.sharedInstance.watchButton(btn, textStyle: UIFontTextStyleBody, fontName: customFontName!)
-            }
-
-        }
-    }
+    var textField = StyleConfigDictionary()
+    var textView = StyleConfigDictionary()
 }
 
-//struct StyleConfigKey<T: UIView> {
-//    var style: String
-//}
-//
-//extension StyleConfigKey: Hashable {
-//
-//    var hashValue: Int {
-//        return 1
-//    }
-//}
-//
-//func ==<T>(lhs: StyleConfigKey<T>, rhs: StyleConfigKey<T>) -> Bool {
-//    return true
-//}
+struct StyleWatcher {
+    static var defaultConfig = StyleConfig()
 
-class Herp {
-    func doStuff() {
-        var config = StyleConfig()
-        config.button[UIFontTextStyleBody] = "Arial"
-//        let x = StyleConfigKey<UILabel>(style: UIFontTextStyleBody)
-//        let y = StyleConfigKey<UIButton>(style: UIFontTextStyleBody)
-//        let d: [StyleConfigKey: String] = [x: "hi", y: "label"]
+    func watchViews(inView container: UIView, withConfig config: StyleConfig = defaultConfig) {
+        for view in container.subviews {
+            switch view {
+            case view as UIButton: watchButton(view as! UIButton, withConfig: config)
+            case view as UILabel: watchLabel(view as! UILabel, withConfig: config)
+            case view as UITextView: watchTextView(view as! UITextView, withConfig: config)
+            case view as UITextField: watchTextField(view as! UITextField, withConfig: config)
+            default:
+                watchViews(inView: view, withConfig: config)
+            }
+        }
+    }
+
+    func watchButton(btn: UIButton, withConfig config: StyleConfig) {
+        guard let textStyle = btn.textStyle,
+            customFontName = config.button[textStyle] else { return }
+        Gliphy.sharedInstance.watchButton(btn, textStyle: UIFontTextStyleBody, fontName: customFontName!)
+    }
+
+    func watchLabel(label: UILabel, withConfig config: StyleConfig) {
+        guard let textStyle = label.textStyle,
+            customFontName = config.label[textStyle] else { return }
+        Gliphy.sharedInstance.watchLabel(label, textStyle: UIFontTextStyleBody, fontName: customFontName!)
+    }
+
+    func watchTextField(textField: UITextField, withConfig config: StyleConfig) {
+        guard let textStyle = textField.textStyle,
+            customFontName = config.textField[textStyle] else { return }
+        Gliphy.sharedInstance.watchTextField(textField, textStyle: UIFontTextStyleBody, fontName: customFontName!)
+    }
+
+    func watchTextView(textView: UITextView, withConfig config: StyleConfig) {
+        guard let textStyle = textView.textStyle,
+            customFontName = config.textView[textStyle] else { return }
+        Gliphy.sharedInstance.watchTextView(textView, textStyle: UIFontTextStyleBody, fontName: customFontName!)
     }
 }
