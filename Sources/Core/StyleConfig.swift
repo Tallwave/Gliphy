@@ -10,10 +10,10 @@ import UIKit
 
 /// Keys of the dictionary are the text styles, values are the names of the custom font.
 /// Example: dictionary[UIFontTextStyleHeadline] = "Verdana"
-typealias StyleConfigDictionary = [String: String?] // textStyle: customFontName
+public typealias StyleConfigDictionary = [String: String?] // textStyle: customFontName
 
 /// Container for all of the views that are supported by the DynamicTypeManager.
-struct StyleConfig {
+public struct StyleConfig {
     var button = StyleConfigDictionary()
     var label = StyleConfigDictionary()
     var textField = StyleConfigDictionary()

@@ -11,7 +11,7 @@ import UIKit
 /**
  `StyleWatcher` will watch a view's subviews and apply the appropriate textStyle to it via the `DynamicTypeManager`.
  */
-struct StyleWatcher {
+public struct StyleWatcher {
     /// An empty config object that is used if one is not passed into the watch methods.
     static var defaultConfig = StyleConfig()
 
@@ -21,7 +21,7 @@ struct StyleWatcher {
      - Parameter inView: The container view to enumerate over.
      - Parameter withConfig: A `StyleConfig` to use on any appropriate views.
     */
-    func watchViews(inView container: UIView, withConfig config: StyleConfig = defaultConfig) {
+    public func watchViews(inView container: UIView, withConfig config: StyleConfig = defaultConfig) {
         for view in container.subviews {
             switch view {
             case view as UIButton: watchButton(view as! UIButton, withConfig: config)
@@ -40,7 +40,7 @@ struct StyleWatcher {
      - Parameter button: The button to watch.
      - Parameter withConfig: A `StyleConfig` to use if the button's style stored within.
      */
-    func watchButton(button: UIButton, withConfig config: StyleConfig) {
+    public func watchButton(button: UIButton, withConfig config: StyleConfig) {
         guard let textStyle = button.textStyle,
             customFontName = config.button[textStyle] else { return }
         Gliphy.sharedInstance.watchButton(button, textStyle: textStyle, fontName: customFontName!)
@@ -52,7 +52,7 @@ struct StyleWatcher {
      - Parameter label: The button to watch.
      - Parameter withConfig: A `StyleConfig` to use if the button's style stored within.
      */
-    func watchLabel(label: UILabel, withConfig config: StyleConfig) {
+    public func watchLabel(label: UILabel, withConfig config: StyleConfig) {
         guard let textStyle = label.textStyle,
             customFontName = config.label[textStyle] else { return }
         Gliphy.sharedInstance.watchLabel(label, textStyle: textStyle, fontName: customFontName!)
@@ -64,7 +64,7 @@ struct StyleWatcher {
      - Parameter textField: The text field to watch.
      - Parameter withConfig: A `StyleConfig` to use if the button's style stored within.
      */
-    func watchTextField(textField: UITextField, withConfig config: StyleConfig) {
+    public func watchTextField(textField: UITextField, withConfig config: StyleConfig) {
         guard let textStyle = textField.textStyle,
             customFontName = config.textField[textStyle] else { return }
         Gliphy.sharedInstance.watchTextField(textField, textStyle: textStyle, fontName: customFontName!)
@@ -76,7 +76,7 @@ struct StyleWatcher {
      - Parameter textView: The text view to watch.
      - Parameter withConfig: A `StyleConfig` to use if the button's style stored within.
      */
-    func watchTextView(textView: UITextView, withConfig config: StyleConfig) {
+    public func watchTextView(textView: UITextView, withConfig config: StyleConfig) {
         guard let textStyle = textView.textStyle,
             customFontName = config.textView[textStyle] else { return }
         Gliphy.sharedInstance.watchTextView(textView, textStyle: textStyle, fontName: customFontName!)
