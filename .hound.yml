@@ -1,0 +1,9 @@
+disabled_rules:
+  - trailing_newline
+included:
+excluded:
+  - Package.swift
+  - Carthage
+  - Pods
+force_cast: warning # implicitly
+line_length: 110
