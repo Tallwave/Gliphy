@@ -9,15 +9,18 @@
 import UIKit
 
 /**
- `StyleWatcher` will watch a view's subviews and apply the appropriate textStyle to it via the `DynamicTypeManager`.
+ `StyleWatcher` will watch a view's subviews and apply the appropriate textStyle 
+ to it via the `DynamicTypeManager`.
  */
 public struct StyleWatcher {
     /// An empty config object that is used if one is not passed into the watch methods.
     static var defaultConfig = StyleConfig()
 
     /**
-     Recursively enumerates over all of the subviews in `container`. If any of the subviews have an appropriate dynamic type textstyle applied, they will be added to the `DynamicTypeManager`.
-     
+     Recursively enumerates over all of the subviews in `container`. If any of 
+     the subviews have an appropriate dynamic type textstyle applied, they will 
+     be added to the `DynamicTypeManager`.
+
      - Parameter inView: The container view to enumerate over.
      - Parameter withConfig: A `StyleConfig` to use on any appropriate views.
     */
@@ -42,8 +45,9 @@ public struct StyleWatcher {
      */
     public func watchButton(button: UIButton, withConfig config: StyleConfig) {
         guard let textStyle = button.textStyle,
-            customFontName = config.button[textStyle] else { return }
-        Gliphy.sharedInstance.watchButton(button, textStyle: textStyle, fontName: customFontName!)
+            customFontName = config.button[textStyle],
+            fontName = customFontName else { return }
+        Gliphy.sharedInstance.watchButton(button, textStyle: textStyle, fontName: fontName)
     }
 
     /**
@@ -54,8 +58,9 @@ public struct StyleWatcher {
      */
     public func watchLabel(label: UILabel, withConfig config: StyleConfig) {
         guard let textStyle = label.textStyle,
-            customFontName = config.label[textStyle] else { return }
-        Gliphy.sharedInstance.watchLabel(label, textStyle: textStyle, fontName: customFontName!)
+            customFontName = config.label[textStyle],
+            fontName = customFontName else { return }
+        Gliphy.sharedInstance.watchLabel(label, textStyle: textStyle, fontName: fontName)
     }
 
     /**
@@ -66,8 +71,9 @@ public struct StyleWatcher {
      */
     public func watchTextField(textField: UITextField, withConfig config: StyleConfig) {
         guard let textStyle = textField.textStyle,
-            customFontName = config.textField[textStyle] else { return }
-        Gliphy.sharedInstance.watchTextField(textField, textStyle: textStyle, fontName: customFontName!)
+            customFontName = config.textField[textStyle],
+            fontName = customFontName else { return }
+        Gliphy.sharedInstance.watchTextField(textField, textStyle: textStyle, fontName: fontName)
     }
 
     /**
@@ -78,7 +84,8 @@ public struct StyleWatcher {
      */
     public func watchTextView(textView: UITextView, withConfig config: StyleConfig) {
         guard let textStyle = textView.textStyle,
-            customFontName = config.textView[textStyle] else { return }
-        Gliphy.sharedInstance.watchTextView(textView, textStyle: textStyle, fontName: customFontName!)
+            customFontName = config.textView[textStyle],
+            fontName = customFontName else { return }
+        Gliphy.sharedInstance.watchTextView(textView, textStyle: textStyle, fontName: fontName)
     }
 }

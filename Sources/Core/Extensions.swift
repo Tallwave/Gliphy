@@ -18,7 +18,8 @@ extension UILabel {
 
 extension UIButton {
     var textStyle: String? {
-        return titleLabel?.font.fontDescriptor().fontAttributes()[Util.dynamicTextAttribute] as? String
+        let key = Util.dynamicTextAttribute
+        return titleLabel?.font.fontDescriptor().fontAttributes()[key] as? String
     }
 }
 
