@@ -9,7 +9,7 @@
 import Foundation
 
 struct Util {
-    /// The name of the attribute that Dynamic Type uses when a text style is 
+    /// The name of the attribute that Dynamic Type uses when a text style is
     /// set in Interface Builder.
     static let dynamicTextAttribute = "NSCTFontUIUsageAttribute"
 }

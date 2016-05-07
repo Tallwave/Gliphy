@@ -5,5 +5,6 @@ excluded:
   - Package.swift
   - Carthage
   - Pods
+  - ExampleApp
 force_cast: warning # implicitly
 line_length: 110

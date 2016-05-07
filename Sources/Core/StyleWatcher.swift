@@ -9,7 +9,7 @@
 import UIKit
 
 /**
- `StyleWatcher` will watch a view's subviews and apply the appropriate textStyle 
+ `StyleWatcher` will watch a view's subviews and apply the appropriate textStyle
  to it via the `DynamicTypeManager`.
  */
 public struct StyleWatcher {
@@ -17,8 +17,8 @@ public struct StyleWatcher {
     static var defaultConfig = StyleConfig()
 
     /**
-     Recursively enumerates over all of the subviews in `container`. If any of 
-     the subviews have an appropriate dynamic type textstyle applied, they will 
+     Recursively enumerates over all of the subviews in `container`. If any of
+     the subviews have an appropriate dynamic type textstyle applied, they will
      be added to the `DynamicTypeManager`.
 
      - Parameter inView: The container view to enumerate over.
