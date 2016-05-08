@@ -18,4 +18,6 @@ public struct StyleConfig {
     public var label = StyleConfigDictionary()
     public var textField = StyleConfigDictionary()
     public var textView = StyleConfigDictionary()
+
+    public init() {}
 }

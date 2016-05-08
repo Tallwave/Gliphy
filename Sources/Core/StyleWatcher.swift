@@ -14,7 +14,7 @@ import UIKit
  */
 public struct StyleWatcher {
     /// An empty config object that is used if one is not passed into the watch methods.
-    static var defaultConfig = StyleConfig()
+    public static var defaultConfig = StyleConfig()
 
     /**
      Recursively enumerates over all of the subviews in `container`. If any of
