@@ -14,8 +14,8 @@ public typealias StyleConfigDictionary = [String: String?] // textStyle: customF
 
 /// Container for all of the views that are supported by the DynamicTypeManager.
 public struct StyleConfig {
-    var button = StyleConfigDictionary()
-    var label = StyleConfigDictionary()
-    var textField = StyleConfigDictionary()
-    var textView = StyleConfigDictionary()
+    public var button = StyleConfigDictionary()
+    public var label = StyleConfigDictionary()
+    public var textField = StyleConfigDictionary()
+    public var textView = StyleConfigDictionary()
 }
