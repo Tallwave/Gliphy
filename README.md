@@ -8,7 +8,7 @@ Gliphy aims to make it a breeze, and give you a couple of extra benefits along t
 * Great Dynamic Type management
 * Custom Fonts
 * Cocoapods support
-* Swift Package Manager support
+* Swift Package Manager support (When Swift 3 is released!)
 
 ## Requirements
 * iOS 8.0+
@@ -144,6 +144,9 @@ Add this line to your podfile:
 
 # Installation without Cocoapods
 Take all of the files in the `Gliphy/Core` folder and copy them into your project.
+
+# Notes
+Xcode 7.3 and 7.3.1 has a bug where the simulator does not catch the `UIContentSizeCategoryDidChangeNotification` that Gliphy relies on. It works fine on device. [There is a radar filed here](http://www.openradar.me/radar?id=6083508816576512).
 
 # License
 MIT license. See `LICENSE` for more details.
