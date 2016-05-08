@@ -16,6 +16,9 @@ public struct StyleWatcher {
     /// An empty config object that is used if one is not passed into the watch methods.
     public static var defaultConfig = StyleConfig()
 
+    /// Default initializer
+    public init() {}
+
     /**
      Recursively enumerates over all of the subviews in `container`. If any of
      the subviews have an appropriate dynamic type textstyle applied, they will

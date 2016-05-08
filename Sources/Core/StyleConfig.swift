@@ -14,10 +14,18 @@ public typealias StyleConfigDictionary = [String: String?] // textStyle: customF
 
 /// Container for all of the views that are supported by the DynamicTypeManager.
 public struct StyleConfig {
+    /// Style dictionary for UIButtons
     public var button = StyleConfigDictionary()
+
+    /// Style dictionary for UILabels
     public var label = StyleConfigDictionary()
+
+    /// Style dictionary for UITextFields
     public var textField = StyleConfigDictionary()
+
+    /// Style dictionary for UITextViews
     public var textView = StyleConfigDictionary()
 
+    /// Default initializer
     public init() {}
 }
