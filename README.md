@@ -1,6 +1,6 @@
 ![Gliphy Logo](https://raw.githubusercontent.com/Tallwave/Gliphy/gh-pages/images/gliphy-logo-github.png)
 
-[![Build script](https://api.travis-ci.org/Tallwave/Gliphy.png)](https://travis-ci.org/Tallwave/Gliphy) 
+[![Build script](https://api.travis-ci.org/Tallwave/Gliphy.png)](https://travis-ci.org/Tallwave/Gliphy) [![Pod version](https://img.shields.io/cocoapods/v/Gliphy.svg?maxAge=2592000)](https://cocoapods.org/?q=gliphy)
 
 Dynamic Type. This is a great technology that makes your app more accessible to people with less than stellar eyesight. And it also makes auto layout a little easier when it comes time to support different languages. It isn't terribly difficult to implement, but can be tedious to cover everything.
 
