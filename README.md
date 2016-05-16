@@ -62,7 +62,7 @@ import Gliphy
 
 override func viewDidLoad() {
     super.viewDidLoad()
-    Gliphy.sharedInstance.watchLabel(titleLabel, textStyle: UIFontTextStyleHeadline, fontName: "Georgia")
+    DynamicTypeManager.sharedInstance.watchLabel(titleLabel, textStyle: UIFontTextStyleHeadline, fontName: "Georgia")
 }
 ```
 
@@ -135,7 +135,7 @@ DynamicFontRegistry.registry.addTextStyle("UIFontTextStyleReallyReallyReallyBigT
 Then use that text style as you would with everything else.
 
 ```swift
-Gliphy.sharedInstance.watchLabel(heroLabel, textStyle: "UIFontTextStyleReallyReallyReallyBigTitle", fontName: "MarkerFelt-Thin")
+DynamicTypeManager.sharedInstance.watchLabel(heroLabel, textStyle: "UIFontTextStyleReallyReallyReallyBigTitle", fontName: "MarkerFelt-Thin")
 
 // or
 
